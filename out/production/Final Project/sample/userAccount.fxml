@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"  xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.userAccountController">
+
+    <Label fx:id="welcomeName" textFill="Blue" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="Course Code: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="courseCode" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label fx:id="invalidCC" text="Invalid Course Code" textFill="red" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+    <Label text="Course Name: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TextField fx:id="courseName" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Label fx:id="invalidCN" text="Invalid Course Name" textFill="red" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <Label text="Professor Name: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <TextField fx:id="profName" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <Label fx:id="invalidProf" text="Invalid Course Name" textFill="red" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+
+    <Label text="Student ID: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TextField fx:id="stu_ID" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <Label fx:id="invalidStuID" text="Invalid Student ID" textFill="red" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+
+    <Label fx:id="displayData" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+    <Button onAction="#addButtonClicked" text="Add" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <Button onAction="#viewButtonClicked" text="View" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <Button onAction="#exitButtonClicked" text="Exit" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+    <TableView fx:id="tableView" prefWidth="258.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+        <columns>
+            <TableColumn fx:id="userName" text="User Name" />
+            <TableColumn fx:id="cCode" text="Course Code" />
+            <TableColumn fx:id="cName" text="Course Name" />
+        </columns>
+    </TableView>
+
+    <Label text="MATH2020: " GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <TextField fx:id="mathTF" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+    <Label text="COIS2420: " GridPane.columnIndex="3" GridPane.rowIndex="4" />
+    <TextField fx:id="coTF" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+    <Label text="COIS2300: " GridPane.columnIndex="3" GridPane.rowIndex="5" />
+    <TextField fx:id="cTF" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+    <Label text="INDG1001: " GridPane.columnIndex="3" GridPane.rowIndex="6" />
+    <TextField fx:id="indTF" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+    <Label text="ADMN1650: " GridPane.columnIndex="3" GridPane.rowIndex="7" />
+    <TextField fx:id="admTF" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+    <Button onAction="#calcButtonClicked" text="Calculate Grade" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+
+    <Label fx:id="totSumL" textFill="blue"  GridPane.columnIndex="4" GridPane.rowIndex="8" />
+
+
+
+
+
+</GridPane>

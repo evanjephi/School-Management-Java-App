@@ -1,0 +1,59 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<GridPane fx:controller="sample.registerController"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
+
+        <Text text="Welcome to Student Management" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" >
+
+                <font>
+                        <Font name="Times New Roman bold" size="20"  />
+                </font>
+
+        </Text>
+
+
+        <Label text="Username: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label fx:id="invalidUN" text="Invalid username" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+        <Label text="Email: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label fx:id="emailInvalid" text="Invalid email" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+        <Label text="Password: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label fx:id="passInvalid" text="Password must contain minimum eight characters, at least one letter and one number" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+        <Label text="Confirm Password: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <PasswordField fx:id="confirmPW" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label fx:id="cpwInvalid" text="Invalid confirm password" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+
+        <Label text="Street Number: " GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <TextField fx:id="streetNo" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <Label fx:id="stNumInvalid" text="Invalid street number" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+
+        <Label text="Street Name: " GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <TextField fx:id="streetName" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="nameStInvalid" text="Invalid street name" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+        <Label text="Postal Code: " GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <TextField fx:id="postalCode" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <Label fx:id="pcInvalid" text="Invalid postal code" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+        <Label text="City: " GridPane.columnIndex="0" GridPane.rowIndex="10" />
+        <TextField fx:id="city" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <Label fx:id="cityInvalid" text="Invalid city name" visible="false" textFill="red" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+
+        <Button onAction="#loginButtonClicked" text="Login" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+        <Button onAction="#registerButtonClicked" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <Button onAction="#exitButtonClicked" text="Exit" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+
+
+</GridPane>
