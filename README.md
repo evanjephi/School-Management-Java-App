@@ -1,5 +1,5 @@
 # School-Management-App
-This program is built to store student information. The program performs multiple functions  such as storing information, retrieving information, calculating student’s average grade.  The program performs multiple functions  such as storing information, retrieving information, calculating student’s average grade.
+This program is a java application that is built to store student information. The program performs multiple functions  such as storing information, retrieving information, calculating student’s average grade.  The program performs multiple functions  such as storing information, retrieving information, calculating student’s average grade.
 
 This program has three windows, registration, login and user account windows. The program connects to database which creates two tables, where studentInfo stores information about the students while studentCourse table stores the courses, the student is registered in. The program will save current student’s session and welcomes the student when logged in.
 
