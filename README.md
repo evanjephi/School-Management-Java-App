@@ -46,10 +46,6 @@ greets current logged in student.
 The student have the options to add his courses, using course code, course name, professor’s name and 
 student ID. Using the add and view button, the student can add and view currently registered courses
 
-<h3>View Currently Registered Courses</h2>
-
-![image](https://user-images.githubusercontent.com/73504127/219113210-de1ed291-c49d-4646-b6bf-c95bb2971aa0.png)
-
 <h3>Registered Courses in Database</h3>
 
 ![image](https://user-images.githubusercontent.com/73504127/219113378-ab8c2e71-6fbf-4853-8b82-b4fd9c37cf28.png)
