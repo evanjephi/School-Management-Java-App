@@ -40,8 +40,7 @@ and password.
 ![image](https://user-images.githubusercontent.com/73504127/219112613-ff9f37bf-4093-4ce9-9ff9-f650aa499ece.png)
 
 After successful username and password is entered, the student can login into his account. The program 
-greets current logged in student.
-![image](https://user-images.githubusercontent.com/73504127/219112893-23b19f4c-509f-4759-a138-5cf9925d7de5.png)
+greets current logged in account. 
 
 The student have the options to add his courses, using course code, course name, professor’s name and 
 student ID. Using the add and view button, the student can add and view currently registered courses
